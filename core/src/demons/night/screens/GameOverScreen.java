@@ -3,6 +3,7 @@ package demons.night.screens;
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -184,10 +185,18 @@ public class GameOverScreen implements Screen {
                 }
             });
 
-            table.row().height(20);
-            table.add(nameTextField).center().height(50f).width(650f).pad(55f).padBottom(-100);
-            table.row().height(50);
-            table.add(quitButton).center().height(50f).width(300f).pad(5f).padBottom(-100);
+            if(Gdx.app.getType().equals(Application.ApplicationType.Android)){
+                table.row().height(20);
+                table.add(nameTextField).center().height(100f).width(650f).pad(55f).padBottom(-400).padRight(-50);
+                table.row().height(50);
+                table.add(quitButton).center().height(100f).width(300f).pad(5f).padBottom(-600);
+            }else{
+                table.row().height(20);
+                table.add(nameTextField).center().height(50f).width(650f).pad(55f).padBottom(-200);
+                table.row().height(50);
+                table.add(quitButton).center().height(50f).width(300f).pad(5f).padBottom(-300);
+            }
+
 
         }
 
@@ -251,7 +260,6 @@ public class GameOverScreen implements Screen {
     public void addScore(String name, int score) {
 
         puntuaciones.add(new Score(name, score));
-        //mostrarRankingEnTabla();
     }
 
     public void guardarXML() {
@@ -288,10 +296,12 @@ public class GameOverScreen implements Screen {
             }
 
             Source source = new DOMSource(documento);
-            Result resultado = new StreamResult(new File("scores.xml"));
+            FileHandle fichero = Gdx.files.local("scores.xml");
+            Result resultado = new StreamResult(fichero.file());
 
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
             transformer.transform(source, resultado);
+
 
         } catch (ParserConfigurationException pce) {
             pce.printStackTrace();
@@ -311,13 +321,13 @@ public class GameOverScreen implements Screen {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         Document documento = null;
 
-        File fichero = new File("scores.xml");
+        FileHandle fichero = Gdx.files.local("scores.xml");
+        //File fichero = new File("scores.xml");
 
-        if(fichero.exists()){
-
+        if(fichero.file().exists()){
             try {
                 DocumentBuilder builder = factory.newDocumentBuilder();
-                documento = builder.parse(fichero);
+                documento = builder.parse(fichero.file());
 
                 NodeList jugadores = documento.getElementsByTagName("Jugador");
                 for (int i = 0; i < jugadores.getLength(); i++) {
