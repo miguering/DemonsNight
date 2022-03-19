@@ -1,4 +1,8 @@
-# Demons Night
+# Demon's Night ![](https://github.com/miguering/DemonsNight/blob/main/android/assets/characters/tanji_run_right_2.png)
+
+<p align="center">
+  <img src="https://github.com/miguering/DemonsNight/blob/main/android/assets/ui/logo_128.png" />
+</p>
 
 Juego básico desarrollado con LibGDX, framework de Java multiplataforma.
 El desarrollo del juego fue realizado en 3-4 días para la asignatura Programación Multimedia, del CFGS Desarrollo de Aplicaciones Multiplataforma.
