@@ -4,6 +4,8 @@ Juego básico desarrollado con LibGDX, framework de Java multiplataforma.
 El desarrollo del juego fue realizado en 3-4 días para la asignatura Programación Multimedia, del CFGS Desarrollo de Aplicaciones Multiplataforma.
 Por lo tanto, el código no es de la mejor calidad, ¡Disculpadme! 😅
 
+👀 [Vista previa del juego](https://www.tiktok.com/@miguering/video/7072815248364834054?is_from_webapp=1&sender_device=pc&web_id=7072801006627784197)
+
 ### Instalación 🔧
 
 _Recomiendo usar un IDE como Netbeans o IntelliJ para abrir el proyecto. 
