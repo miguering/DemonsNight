@@ -1,0 +1,48 @@
+
+items.png
+size: 16, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+coin
+  rotate: false
+  xy: 2, 49
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: -1
+gem
+  rotate: false
+  xy: 2, 49
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: 1
+gem
+  rotate: false
+  xy: 2, 66
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: 2
+gem
+  rotate: false
+  xy: 2, 32
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: 4
+gem
+  rotate: false
+  xy: 2, 15
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: 3
+life
+  rotate: false
+  xy: 2, 2
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1

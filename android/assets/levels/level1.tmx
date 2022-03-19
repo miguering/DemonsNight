@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="78" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="25">
+ <tileset firstgid="1" name="fondo" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="BGBack.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="641" name="fondo223" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="BGFront.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="1281" name="CloudsBack" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="CloudsBack.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="1921" name="CloudsFront" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="CloudsFront.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="2561" name="tileset" tilewidth="16" tileheight="16" tilecount="60" columns="10">
+  <image source="Tileset.png" width="160" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2621" name="spr_coin_strip4" tilewidth="16" tileheight="16" tilecount="4" columns="4">
+  <image source="../items/spr_coin_strip4.png" width="64" height="16"/>
+ </tileset>
+ <tileset firstgid="2625" name="skeleto_left_1" tilewidth="19" tileheight="31" tilecount="1" columns="1">
+  <image source="../characters/skeleto_left_1.png" width="19" height="31"/>
+  <tile id="0">
+   <properties>
+    <property name="skeleto" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2626" name="volador_left_1" tilewidth="18" tileheight="18" tilecount="1" columns="1">
+  <image source="../characters/volador_left_1.png" width="18" height="18"/>
+ </tileset>
+ <tileset firstgid="2627" name="cartel" tilewidth="40" tileheight="42" tilecount="1" columns="1">
+  <properties>
+   <property name="goal" value=""/>
+  </properties>
+  <image source="../items/cartel.png" width="40" height="42"/>
+  <tile id="0">
+   <properties>
+    <property name="goal" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="6" name="fondo3" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3QVawXZBzHYeqcQ3d3d3d3d3d3d7dg0N2NSYdBKKGE0t2hNAYdSqj4uOnmhcM7d/7b+W3Pzbu9+2zfoKBw4YLChAkTqmUiAhGJ9I+3P0UmClGJRnRiEJNYxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQm/L/0gwkJ5f1Mr5GZLGQlG9nJQU5ykZs85CUf+SlAQQpRmCIUpRjFKUFJSlGaNKQlHenJQMYA6L9ut8pUoSrVqE4NalKL2tShLvWoTwMa0ojGNKEpzWhOC1rSitaUoSzlKE8FKlIplPdft9vfutKN7vSgJ73oTR/60o/+DGAggxjMEIYyjOGMYCSjGE0b2tKO9nSgI53oTJdQ2v+vzcYzgYlMYjJTmMo0pjODmcxiNnOYyzzms4CFLGIxS1jKMt5gDGN5k7d4m3cYF4r7r9tsBStZxWrWsJZ1rGcDG/mYT/iUz9jEZrawlc/5gm1sZwc7+ZLlvMt7vM8HfMhHobz/1T922sNevuYb9rGfAxzkEIc5wlGOcZwTnOQUpznDWc5xngtc5BKX+ZbvuPJXfxe7A6x/lWtc5wY3ucVtvucHfuQn7nCXe9znAQ95xGOe8JSf+YVnPOcFL/mV3/idV4QLDtx+eH8jEJFIBBFMCJGJQlSiEZ0YxCQWsYlDXOIRnwQkJBGJSUJSkpGcFKQkFamDA7efhrSkIz0ZyEgmMpOFrGQjOznISS5yk4e85CM/BShIIQpThKIUozglKEkpSgdwvwxlKUd5KlCRSlSmClWpRnVqUJNa1KYOdalHfRrQkEY0pglNaUZzWtCSVrQO4H4b2tKO9nSgI53oTBe60o3u9KAnvehNH/rSj/4MYCCDGMwQhjKM4YxgJKMYHcD9NxjDWN7kLd7mHcYxnglMZBKTmcJUpjGdGcxkFrOZw1zmMZ8FLGQRi1nCUpYFcH857/Ie7/MBH/IRK1jJKlazhrWsYz0b2MjHfMKnfMYmNrOFrXzOF2xjOzvYyZcB3P+KXexmD3v5mm/Yx34OcJBDHOYIRznGcU5wklOc5gxnOcd5LnCRS1zmW77jSgD3r3KN69zgJre4zff8wI/8xB3uco/7POAhj3jME57yM7/wjOe84CW/8hu/84pwIYHbD+9vBCISiSCCCSEyUYhKNKITg5jEIjZxiEs84pOAhCQiMUlISjKSk4KUpCJ1SOD205CWdKQnAxnJRGaykJVsZCcHOclFbvKQl3zkpwAFKURhilCUYhSnBCUpRekA7pehLOUoTwUqUonKVKEq1ahODWpSi9rUoS71qE8DGtKIxjShKc1oTgta0orWAdxvQ1va0Z4OdKQTnelCV7rRnR70pBe96UNf+tGfAQxkEIMZwlCGMZwRjGQUowO4H3Zh93/eH72E6u94HgAA
+  </data>
+ </layer>
+ <layer id="7" name="fondo4" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3WU5AmZwCG0T/JJJnd2LZt27Zt28batjlr2xiba+9YO1wzpyoXuc1mUjXVtf9bdarv+un++qZDofDCCy+88MILr67rEhkKdaUb3elBT3rRmz70pR/9GcBAGtGYJjSlGc1pQUta0Zo2tKUd7elARzrROTK4/clMYSrTmM4MZjKL2cxhLvOYzwIGMZghDCWKYQxnBCMZxWjGMJZxjGcCE5kU4H4Oi1jMEpayjOWsYCWrWM0a1rKOhUQTQyxxxJNAIkkkk0IqaaSTQSZZZAe4X8tGNrGZLWxlG9vZwU52sZs9hBqEQutdc8kjnwIKKaKYEkopo5wNVFBJFdXUBLh/DMdyHMdzAidyEidzCqdyGqdzBmeyH/tzABEcyEEcTCQNaMghHMphHM4RHMlRHB3g/jVcy3Vczw3cyE3czC3cym3czh3cyVmczTmcy3mczwVcyEVczCVcymVczhVcyVVcHeD+MzzLczzPC7zIS7zMK7zKa7zOG7zJXdzNPdzLfdzPAzzIQzzMIzzKYzzOEzzJUzwd4P43fMt3fM8P/MhP/Mwv/Mpv/M4f/MlbvM07vMt7vM8HfMhHfMwnfMpnfM4XfMlXfB3gfhe60o3u9KAnvehNH/rSj/4MYCCNaEwTmtKM5rSgJa1oTRva0o72dKAjnegc4P5kpjCVaUxnBjOZxWzmMJd5zGcBgxjMEIYSxTCGM4KRjGI0YxjLOMYzgYlMCnA/h0UsZglLWcZyVrCSVaxmDWtZx0KiiSGWOOJJIJEkkkkhlTTSySCTLLID3K9lI5vYzBa2so3t7GAnu9jNHkIN/T+55pJHPgUUUkQxJZRSRjkbqKCSKqqpCXC/vr9bfff/6+r7u9V3P7x9e1ERfwtv77YvndtC7xlNDLHEEU8CiSSRTAqppJFOBplkkU1OxD/n9m/Ori7duj7z/7H17pNLHvkUUEgRxZRQShnlbKCCSqqopobavTy3unTr+sx/AVf0hOd4HgAA
+  </data>
+ </layer>
+ <layer id="3" name="fondo" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3W508UQRjH8b31FMUGRhBQY2yg2BV7iyLFglgSxfJGERVFEH0hRt7Ye+M/AM+OWP4DCxYULP+BBQ8RUAx2Ub8JbkLQG0czs8ZknuSTTS6zv3meyd7tWZYpU6ZMmTJlypQpU/93bfdY1g7sxC7sxh7sxT7s9/zrDv+uZOY6gIM4hMM4gqM4huMo8ATOKUQRTsCHkziF0ziDs4J7VfWgI0dmrnM4j2JcQAku4hIu44og5yqu4TpuoBQ3cQu3cceFHnTkyMxVhru4h3JU4D4e4CEeCXIe4wme4hkq8Rx+VOGFCz3oyJGZqxovUYNa1OEVXqMebwQ5HtuybLSCF63RBkFoi3a2/h505MjMFYz26ICO6ITOCEEoutiBc3qjD/qiH/ojGjEYgIGCe1X1oCNHZq5YDMJgDMFQDMNwjMBIQc40TEc8ZiABiUhCMma60IOOHJm5ZmE25iAFc5GKeZiPBYKcFViJdKxCBlZjDdYi04UedOTIzLUO65GFDchGDjYiF5sEOTL5unvQlaNqv83Nrs77x83filFoYM+3eIf3+ICP+ITP+IJGfMU3Re8Slf07e4sy/d4mqr5fC9EVYQhHN0QgElHojh7oaTf95+9lq3mXqOzf2VuU6Zybyuc9DqMxBmMxDuMxARMxCZMxBVNtNc+Kyv6dvUWZqp43nzcwfzOidbJrZfZexOeLkYYlWIplWG7/nF0ZgP8XWq753Tw6tezN55U/Z5EtnFEetv44221c8//g3GSYMuVmfQdDPZ7peB4AAA==
+  </data>
+ </layer>
+ <layer id="5" name="fondo2" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3N99fPdQDG4S8eOzNkZ2eXZK9SyN5SRIlQyN6rSMPObJghZWU0kFkhq+zMsvdWZnT9Gx/n/TrnOvePdywWCoVCoVAoFAqFQqFQKKoljYvFkpGcR0hBSlKRmjSk5VHSkZ4MPEZGMpGZLGQlG9l5nBzEIz4JiCMhiUhMkrjo/hegIIUoTBGK8iRPUYynKc4zlKAkpShNGcpSjvJUoCKVeJac5CI3echLPp4gf4T/q1ODmtSiNnWoSz3q04CGNKIxTXiJprzMKzSjOa/Sgpa8xnNU5nleoApVqcaLEf5vz1u8TQc60ol36EwXutKN7vSgJ73oTR/60o/+DGAggxjM67TiDVrThjdpS7sI/3/ExwxnBCMZxWjGMJZPGMd4JjCRSUzmUz7jc75gClOZxnTe5T2GMJT3GcYHfBjh/6/5hnnMZwELWcS3LGYJS1nGd3zPD/zIclawkp9YxWrWsJYZzORLZjGbOXzF3Aj//8ZmtrCVbWznd/5gBzvZxW72sJd9/Ml+DnCQQxzmCH/xN+tYz8/8wq9sYCObIvx/lnOc5wIXucRlrnCVa1znBv/wLze5xW3ucJd7/Md9HhBLGIsdtcc4zglOcorTnInwfygUCj2s/Q9Hqm4QeB4AAA==
+  </data>
+ </layer>
+ <layer id="4" name="rocks" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu1X2w7CMAjtNHHJpvNJ7f/4//9kl4wECZT1sptykhMftgqcHlbqnMFgMBgMBoPh19F0zp0Cz93WmRwLfdDrGngz3ZLwCHo9A18VdAPvUnJeruXzlJgU7+md3PWxfFLWg3cpOS+X+hzyawM9ijVMv5IPOJ09yXcoyCunLvAuJVdDrs9x3S2pNxYP14V1ujP77Av6r2b/loD6o538MGdvOHA9Qf26RM1rn7/UH7EenIPRDxfhe7Lk+bi2D2nv14gL2g2Mblv3197B+c5msXmAb512Bhu+0ZvXsrC0btJMfvR7Legm1ZZCTgdpntXOt5jeWlxtrbRfjfIOfk7nmxLW9Ou4n3Sm58jda7i5Dc/4Up595D/xc3ov25tuuXG1tZpu2r24Nv9Rtw8oGo4geB4AAA==
+  </data>
+ </layer>
+ <layer id="8" name="grass" width="78" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2XMQ6AIAxFnR0cXDGeQ73/wSwDiSGUAhKg+l/SyZaW9hNwmgAAAAAAdLHOvSvQh6GebWQ7etcVq13fNOQ8KOYkuzrox2nXt5CWa+k8JyfH2/hQPaOe39L6Qn3+A6PPM0bL+9fXh8Z+WTTPGwAAQF1a/we0pnRfXAz3Jk+9V0PrptTnfHzfGjN7rsHtLcdqvi9i/ZbySrFcnUbwkb6XsHzw7AEwGjdaANhVeB4AAA==
+  </data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="11" gid="2621" x="32" y="160" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="12" gid="2621" x="111.334" y="110.667" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="13" gid="2621" x="434" y="190.667" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="14" gid="2621" x="807" y="124.5" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="15" gid="2621" x="1186" y="328" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="16" gid="2621" x="1037.67" y="140.667" width="16" height="16">
+   <properties>
+    <property name="coin" value=""/>
+   </properties>
+  </object>
+  <object id="17" gid="2625" x="255.667" y="336" width="16" height="27">
+   <properties>
+    <property name="enemy" value="true"/>
+    <property name="skeleto" value=""/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="18" gid="2625" x="558.5" y="156.5" width="19" height="31">
+   <properties>
+    <property name="enemy" value="true"/>
+    <property name="skeleto" value=""/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="19" gid="2625" x="1071.83" y="332.5" width="19" height="31">
+   <properties>
+    <property name="enemy" value="true"/>
+    <property name="skeleto" value=""/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="20" gid="2626" x="157.833" y="130.5" width="18" height="18">
+   <properties>
+    <property name="enemy" value="true"/>
+    <property name="volador" value=""/>
+   </properties>
+  </object>
+  <object id="23" name="personaje" gid="580" x="96.5" y="332.5" width="16" height="16"/>
+  <object id="24" gid="2626" x="807.833" y="187.333" width="18" height="18">
+   <properties>
+    <property name="enemy" value="true"/>
+    <property name="volador" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

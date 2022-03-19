@@ -1,0 +1,95 @@
+package demons.night.managers;
+import java.util.Iterator;
+
+import com.badlogic.gdx.maps.MapLayer;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTile;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
+import com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile;
+import com.badlogic.gdx.maps.tiled.tiles.StaticTiledMapTile;
+import com.badlogic.gdx.utils.Array;
+
+
+public class TiledMapManager {
+
+	// keys que identifican los tipos de tiles
+	public static final String COIN = "coin";
+	public static final String DUENDE = "duende";
+	public static final String SKELETO = "skeleto";
+	public static final String BOX = "box";
+	public static final String BLOCKED = "blocked";
+	public static final String ENEMY = "enemy";
+	public static final String GOAL = "goal";
+	public static final String ANIMATION = "animation";
+	public static final String PERSONAJE = "personaje";
+	public static final String VOLADOR = "volador";
+	public static final String WATER_UP = "water_up";
+	public static final String WATER_DOWN = "water_down";
+	
+	public static TiledMapTileLayer collisionLayer;
+	public static MapLayer objectLayer;
+	public static LevelManager levelManager;
+	
+	// Tamaños de las plataformas móviles
+	public static final int PLATFORM_WIDTH = 16;
+	public static final int PLATFORM_HEIGHT = 16;
+
+    public static void setLevelManager(LevelManager levelManager) {
+        TiledMapManager.levelManager = levelManager;
+    }
+	/**
+	 * Coloca tiles animados
+	 * @param animationString Key que identifica al tipo de tile de animación
+	 * @param n Número de tiles que componen la animación
+	 */
+	public static void animateTiles(String animationString, int n) {
+		
+		// Localiza los tiles anotados como animaciones en el tileset
+		Array<StaticTiledMapTile> frameTiles = new Array<StaticTiledMapTile>(n);
+		Iterator<TiledMapTile> tiles = TiledMapManager.levelManager.map.getTileSets().getTileSet("tileset").iterator();
+		while (tiles.hasNext()) {
+			TiledMapTile tile = tiles.next();
+			if ((tile.getProperties().containsKey(ANIMATION)) && (tile.getProperties().get(ANIMATION, String.class).equals(animationString))) {
+				frameTiles.add((StaticTiledMapTile) tile);
+			}
+		}
+		
+		// Crea un tile animado y le asigna las propiedades de todos los tiles que forman la animación
+		AnimatedTiledMapTile animatedTile = new AnimatedTiledMapTile(1 / 4f, frameTiles);
+		// El Tile animado tiene que heredar todas las propiedades de los tiles estáticos que lo forman
+		for (TiledMapTile tile : frameTiles)
+			animatedTile.getProperties().putAll(tile.getProperties());
+		
+		// Coloca el tile animado donde haya un tile del mismo tipo pero estático
+		for (int x = 0; x < collisionLayer.getWidth(); x++) {
+			for (int y = 0; y < collisionLayer.getHeight(); y++) {
+				Cell cell = collisionLayer.getCell(x, y);
+				if (cell == null)
+					continue;
+				if (cell.getTile().getProperties().containsKey(ANIMATION) && 
+					cell.getTile().getProperties().get(ANIMATION, String.class).equals(animationString)) {
+					cell.setTile(animatedTile);
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Devuelve el tile de una caja vacía, para sustituir a la del interrogante
+	 * @param map El mapa actual
+	 * @return El tile
+	 */
+	public static TiledMapTile getEmptyBox(TiledMap map) {
+		
+		Iterator<TiledMapTile> tiles = map.getTileSets().getTileSet("tileset").iterator();
+		while (tiles.hasNext()) {
+			TiledMapTile tile = tiles.next();
+			if ((tile.getProperties().containsKey("empty_box"))) {
+				return tile;
+			}
+		}
+		
+		return null;
+	}
+}

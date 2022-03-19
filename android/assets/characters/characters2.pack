@@ -1,0 +1,82 @@
+
+characters.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+mario_walk_right
+  rotate: false
+  xy: 1, 1
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: 1
+mario_walk_right
+  rotate: false
+  xy: 19, 1
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: 2
+mario_walk_left
+  rotate: false
+  xy: 37, 2
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: 1
+mario_walk_left
+  rotate: false
+  xy: 55, 2
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: 2
+mario_jump_left
+  rotate: false
+  xy: 73, 3
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+mario_jump_right
+  rotate: false
+  xy: 91, 3
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+mario_idle_left
+  rotate: false
+  xy: 109, 1
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+mario_idle_right
+  rotate: false
+  xy: 125, 1
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+turtle2
+  rotate: false
+  xy: 141, 9
+  size: 15, 20
+  orig: 15, 20
+  offset: 0, 0
+  index: -1
+turtle1
+  rotate: false
+  xy: 158, 10
+  size: 15, 19
+  orig: 15, 19
+  offset: 0, 0
+  index: -1
+enemy
+  rotate: false
+  xy: 175, 16
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1

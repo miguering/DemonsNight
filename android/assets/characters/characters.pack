@@ -1,0 +1,286 @@
+
+characters3.png
+size: 512, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+duende_left
+  rotate: false
+  xy: 178, 9
+  size: 13, 17
+  orig: 13, 17
+  offset: 0, 0
+  index: 3
+duende_left
+  rotate: false
+  xy: 193, 28
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: 2
+duende_left
+  rotate: false
+  xy: 193, 9
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: 1
+duende_right
+  rotate: false
+  xy: 178, 28
+  size: 13, 17
+  orig: 13, 17
+  offset: 0, 0
+  index: 3
+duende_right
+  rotate: false
+  xy: 207, 28
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: 2
+duende_right
+  rotate: false
+  xy: 207, 9
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: 1
+skeleto_left
+  rotate: false
+  xy: 311, 51
+  size: 19, 32
+  orig: 19, 32
+  offset: 0, 0
+  index: 2
+skeleto_left
+  rotate: false
+  xy: 332, 52
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: 1
+skeleto_left
+  rotate: false
+  xy: 353, 57
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: 3
+skeleto_right
+  rotate: false
+  xy: 258, 52
+  size: 19, 32
+  orig: 19, 32
+  offset: 0, 0
+  index: 2
+skeleto_right
+  rotate: false
+  xy: 374, 57
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: 1
+skeleto_right
+  rotate: false
+  xy: 395, 57
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: 3
+tanji_attack_left
+  rotate: false
+  xy: 171, 86
+  size: 43, 40
+  orig: 43, 40
+  offset: 0, 0
+  index: 2
+tanji_attack_left
+  rotate: false
+  xy: 166, 47
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: 1
+tanji_attack_right
+  rotate: false
+  xy: 61, 15
+  size: 43, 40
+  orig: 43, 40
+  offset: 0, 0
+  index: 2
+tanji_attack_right
+  rotate: false
+  xy: 196, 47
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: 1
+tanji_idle_left
+  rotate: false
+  xy: 485, 86
+  size: 20, 40
+  orig: 20, 40
+  offset: 0, 0
+  index: -1
+tanji_idle_right
+  rotate: false
+  xy: 144, 46
+  size: 20, 40
+  orig: 20, 40
+  offset: 0, 0
+  index: -1
+tanji_jump_left
+  rotate: false
+  xy: 318, 85
+  size: 30, 41
+  orig: 30, 41
+  offset: 0, 0
+  index: 3
+tanji_jump_left
+  rotate: false
+  xy: 421, 91
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: 2
+tanji_jump_left
+  rotate: false
+  xy: 106, 15
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: 1
+tanji_jump_right
+  rotate: false
+  xy: 286, 85
+  size: 30, 41
+  orig: 30, 41
+  offset: 0, 0
+  index: 3
+tanji_jump_right
+  rotate: false
+  xy: 453, 91
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: 2
+tanji_jump_right
+  rotate: false
+  xy: 226, 49
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: 1
+tanji_run_left
+  rotate: false
+  xy: 386, 90
+  size: 33, 36
+  orig: 33, 36
+  offset: 0, 0
+  index: 2
+tanji_run_left
+  rotate: false
+  xy: 279, 49
+  size: 30, 34
+  orig: 30, 34
+  offset: 0, 0
+  index: 1
+tanji_run_right
+  rotate: false
+  xy: 350, 90
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: 2
+tanji_run_right
+  rotate: false
+  xy: 112, 52
+  size: 30, 34
+  orig: 30, 34
+  offset: 0, 0
+  index: 1
+volador_left
+  rotate: false
+  xy: 2, 2
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: 2
+volador_left
+  rotate: false
+  xy: 138, 7
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: 3
+volador_left
+  rotate: false
+  xy: 158, 26
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: 1
+volador_right
+  rotate: false
+  xy: 22, 2
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: 2
+volador_right
+  rotate: false
+  xy: 138, 26
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: 1
+volador_right
+  rotate: false
+  xy: 158, 7
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: 3
+water_attack_left
+  rotate: false
+  xy: 2, 57
+  size: 53, 69
+  orig: 53, 69
+  offset: 0, 0
+  index: 3
+water_attack_left
+  rotate: false
+  xy: 112, 88
+  size: 57, 38
+  orig: 57, 38
+  offset: 0, 0
+  index: 2
+water_attack_left
+  rotate: false
+  xy: 216, 86
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: 1
+water_attack_right
+  rotate: false
+  xy: 57, 57
+  size: 53, 69
+  orig: 53, 69
+  offset: 0, 0
+  index: 3
+water_attack_right
+  rotate: false
+  xy: 2, 17
+  size: 57, 38
+  orig: 57, 38
+  offset: 0, 0
+  index: 2
+water_attack_right
+  rotate: false
+  xy: 251, 86
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: 1
